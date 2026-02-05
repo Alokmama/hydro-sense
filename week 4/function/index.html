@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="hello"></p>
+    <p id="perkalian"></p>
+    <script>
+        function hello() {
+            return "Hello, World!";
+        }
+        say = hello();
+        document.getElementById("hello").innerHTML = "katakan " + say;
+
+        function perkalian(a, b) {
+            return a * b;
+        }
+        hasil = perkalian(5, 3);
+        document.getElementById("perkalian").innerHTML += "<br>Hasil perkalian " + hasil;
+
+    </script>
+</body>
+</html>
